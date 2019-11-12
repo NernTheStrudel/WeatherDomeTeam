@@ -39,6 +39,7 @@ public class BodySourceManager : MonoBehaviour
                 if (_Data == null)
                 {
                     _Data = new Body[_Sensor.BodyFrameSource.BodyCount];
+                    
                 }
                 
                 frame.GetAndRefreshBodyData(_Data);
