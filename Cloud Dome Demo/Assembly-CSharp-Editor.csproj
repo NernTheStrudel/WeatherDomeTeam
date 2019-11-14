@@ -66,8 +66,26 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
@@ -78,20 +96,17 @@
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Editor">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.Runtime">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
@@ -99,26 +114,11 @@
     <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
       <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.CacheServer">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Lightweight.Runtime">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>C:/Users/nerns/OneDrive/Documents/WeatherDomeTeam/Cloud Dome Demo/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
