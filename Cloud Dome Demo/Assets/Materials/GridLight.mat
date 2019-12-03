@@ -9,14 +9,13 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: GridLight
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _ENVIRONMENTREFLECTIONS_OFF _GLOSSYREFLECTIONS_OFF
-    _RECEIVE_SHADOWS_OFF _SPECULARHIGHLIGHTS_OFF _SPECULAR_SETUP
+  m_ShaderKeywords: _EMISSION _ENVIRONMENTREFLECTIONS_OFF _GLOSSYREFLECTIONS_OFF _RECEIVE_SHADOWS_OFF
+    _SPECULARHIGHLIGHTS_OFF _SPECULAR_SETUP
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - SHADOWCASTER
   m_SavedProperties:
@@ -73,13 +72,13 @@ Material:
     - _Cull: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EnvironmentReflections: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
-    - _Mode: 3
+    - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _QueueOffset: 0
@@ -91,11 +90,11 @@ Material:
     - _Surface: 1
     - _UVSec: 0
     - _WorkflowMode: 0
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0, b: 0.8427868, a: 0.41960785}
-    - _Color: {r: 1, g: 0, b: 0.8427868, a: 0.41960785}
-    - _EmissionColor: {r: 0.09411765, g: 0.25, b: 0.25, a: 1}
+    - _Color: {r: 1, g: 0.21699995, b: 0.87717646, a: 0.41960785}
+    - _EmissionColor: {r: 0.59743667, g: 0.8705506, b: 0.8705506, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
 --- !u!114 &6000034470700763406
 MonoBehaviour:
