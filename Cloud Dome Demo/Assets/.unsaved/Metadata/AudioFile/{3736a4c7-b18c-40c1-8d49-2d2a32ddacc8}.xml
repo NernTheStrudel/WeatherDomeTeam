@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{3736a4c7-b18c-40c1-8d49-2d2a32ddacc8}">
+		<property name="assetPath">
+			<value>vocal-harmony.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.5265306122448981</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d529f61c-61ae-4a82-be53-b54c98e794fe}</destination>
+		</relationship>
+	</object>
+</objects>

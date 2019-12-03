@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{762f82a4-0242-42c5-8a25-ae008e0051a0}">
+		<property name="assetPath">
+			<value>HardSynth.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.9745416666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d529f61c-61ae-4a82-be53-b54c98e794fe}</destination>
+		</relationship>
+	</object>
+</objects>
