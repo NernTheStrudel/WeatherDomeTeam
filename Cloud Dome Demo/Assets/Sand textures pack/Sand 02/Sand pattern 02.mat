@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Sand pattern 02
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _GLOSSYREFLECTIONS_OFF _NORMALMAP
-  m_LightmapFlags: 0
+  m_ShaderKeywords: _DETAIL_MULX2 _GLOSSYREFLECTIONS_OFF _NORMALMAP
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -20,29 +20,29 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 427cf221b0e5f4b4da9d0821562ddc18, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 3, y: 3}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 3.22, y: 3.58}
+        m_Scale: {x: 10, y: 5}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 427cf221b0e5f4b4da9d0821562ddc18, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 249658be85c3a614fb5a8d8eb3cf0f52, type: 3}
-        m_Scale: {x: 9.5, y: 6.14}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: e155fb97ad9168048aa4c91b3f999722, type: 3}
+        m_Scale: {x: 10, y: 5}
+        m_Offset: {x: 15, y: 10}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 249658be85c3a614fb5a8d8eb3cf0f52, type: 3}
-        m_Scale: {x: 9.5, y: 6.14}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 693b9f7e996b40a4ba4927e6f4cde6c1, type: 3}
+        m_Scale: {x: 10, y: 5}
+        m_Offset: {x: 15, y: 10}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -71,9 +71,9 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _UVSec: 0
+    - _UVSec: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0.5379218, b: 0.9221513, a: 1}
+    - _Color: {r: 1, g: 0.75, b: 0.8882843, a: 1}
+    - _EmissionColor: {r: 0.32845318, g: 0.47666427, b: 0.5754717, a: 1}
     - _SpecColor: {r: 1, g: 0.9720081, b: 0.9117647, a: 1}
