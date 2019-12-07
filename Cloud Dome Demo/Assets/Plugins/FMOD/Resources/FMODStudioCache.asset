@@ -20,6 +20,72 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1058
   Exists: 1
+--- !u!114 &-8078061159878074433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SoftAndHard
+  m_EditorClassIdentifier: 
+  Path: event:/SoftAndHard
+  guid: 6fe82a39e10da944998d9e4b70a65dbb
+  Banks:
+  - {fileID: -1669393497297449523}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5520223144947708524}
+  - {fileID: -4599232655790825129}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7875316789241298116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Harp
+  m_EditorClassIdentifier: 
+  Path: event:/Harp
+  guid: 5f021f05ed29f8498c55ab0ec0c282a2
+  Banks:
+  - {fileID: -1669393497297449523}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1675791574181030649}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 57600
+--- !u!114 &-7696089886018730003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WeatherVibe/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  Min: 0
+  Max: 13
+  Default: 0
+  Exists: 1
 --- !u!114 &-6842916809763322499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +200,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5520223144947708524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SoftAndHard/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-4890378639545369623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/WeatherVibe/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-4599232655790825129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SoftAndHard/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  Min: 0
+  Max: 13
+  Default: 0
+  Exists: 1
 --- !u!114 &-4254729661374613257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,6 +293,31 @@ MonoBehaviour:
   Max: 13
   Default: 0
   Exists: 1
+--- !u!114 &-2734592778212066056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/WeatherVibe
+  m_EditorClassIdentifier: 
+  Path: event:/WeatherVibe
+  guid: 97e405a22e134a4ab469f755a1343d5a
+  Banks:
+  - {fileID: -1669393497297449523}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7696089886018730003}
+  - {fileID: -4890378639545369623}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 149052
 --- !u!114 &-2520815269401001598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +343,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 149052
+--- !u!114 &-2320415959791711006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/WeatherDome11_11/WeatherDome11_11/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637113307126928995
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1098
+  Exists: 1
 --- !u!114 &-2266541916377762876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +396,24 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 1
+--- !u!114 &-1669393497297449523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../../Downloads/WeatherDome11_11/WeatherDome11_11/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637113307126859197
+  LoadResult: 0
+  FileSizes: []
   Exists: 1
 --- !u!114 &-1534142356378518292
 MonoBehaviour:
@@ -302,19 +482,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -8389729460481409685}
-  - {fileID: 602355323492446651}
+  - {fileID: -2320415959791711006}
+  - {fileID: -1669393497297449523}
   EditorEvents:
-  - {fileID: -6584307828639704372}
-  - {fileID: -4254729661374613257}
-  - {fileID: -2520815269401001598}
-  - {fileID: -5715266493878665408}
+  - {fileID: -7875316789241298116}
+  - {fileID: -8078061159878074433}
+  - {fileID: -2734592778212066056}
+  - {fileID: 5200627292721302736}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 602355323492446651}
+  - {fileID: -1669393497297449523}
   StringsBanks:
-  - {fileID: -8389729460481409685}
-  stringsBankWriteTime: 637109582607167346
+  - {fileID: -2320415959791711006}
+  stringsBankWriteTime: 637113307126928995
   cacheVersion: 3
 --- !u!114 &602355323492446651
 MonoBehaviour:
@@ -355,6 +535,23 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 3902784
+  Exists: 1
+--- !u!114 &1675791574181030649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Harp/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &2841175432508248611
 MonoBehaviour:
@@ -456,6 +653,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 149052
+--- !u!114 &5200627292721302736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EmotionalStart
+  m_EditorClassIdentifier: 
+  Path: event:/EmotionalStart
+  guid: ffcc766323ca234bb2ab0c5b756fc7f1
+  Banks:
+  - {fileID: -1669393497297449523}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6379319251371047056}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6052637013712820395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,6 +695,23 @@ MonoBehaviour:
   Default: 0
   Exists: 1
 --- !u!114 &6342023766619220620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/EmotionalStart/Pitch
+  m_EditorClassIdentifier: 
+  Name: Pitch
+  Min: 0
+  Max: 13
+  Default: 0
+  Exists: 1
+--- !u!114 &6379319251371047056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

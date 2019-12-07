@@ -15,8 +15,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:/Weatheer/WeatherDome11_11/WeatherDome11_11.fspro
-  sourceBankPath: D:\Weatheer\WeatherDome11_11\Build
+  sourceProjectPath: ../../../../Downloads/WeatherDome11_11/WeatherDome11_11/WeatherDome11_11.fspro
+  sourceBankPath: ..\..\..\..\Downloads\WeatherDome11_11\WeatherDome11_11\Build
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

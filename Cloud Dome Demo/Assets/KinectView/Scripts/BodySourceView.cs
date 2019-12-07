@@ -123,6 +123,7 @@ public class BodySourceView : MonoBehaviour
             jointObj.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
             jointObj.name = jt.ToString();
             jointObj.transform.parent = body.transform;
+            jointObj.GetComponent<MeshRenderer>().enabled = false;
         }
         
         return body;
