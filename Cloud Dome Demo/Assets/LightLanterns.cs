@@ -24,7 +24,7 @@ public class LightLanterns : MonoBehaviour {
         LightLantern();
     }
 
-    void LightLantern()
+    public void LightLantern()
     {
         if (currentFire == null)//light it
         {

@@ -62,6 +62,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BeachBall.cs" />
+    <Compile Include="Assets\BeachBallSpawner.cs" />
     <Compile Include="Assets\BodyOutputManager.cs" />
     <Compile Include="Assets\ClatterSound.cs" />
     <Compile Include="Assets\DOTween\DOTween\Modules\DOTweenModuleAudio.cs" />
@@ -71,6 +73,8 @@
     <Compile Include="Assets\DOTween\DOTween\Modules\DOTweenModuleUI.cs" />
     <Compile Include="Assets\DOTween\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
     <Compile Include="Assets\DOTween\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Fireworks.cs" />
+    <Compile Include="Assets\FireworksSpawner.cs" />
     <Compile Include="Assets\HandFollow.cs" />
     <Compile Include="Assets\HandManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\BodySourceManager.cs" />
@@ -83,6 +87,7 @@
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceManager.cs" />
     <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
     <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
+    <Compile Include="Assets\LifeguardWhistle.cs" />
     <Compile Include="Assets\LightLanterns.cs" />
     <Compile Include="Assets\LightningBolt\LightningBoltScript.cs" />
     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
@@ -90,6 +95,7 @@
     <Compile Include="Assets\Scripts\CloudHandManager.cs" />
     <Compile Include="Assets\Scripts\CloudManager.cs" />
     <Compile Include="Assets\Scripts\ThunderEffect.cs" />
+    <Compile Include="Assets\Spin.cs" />
     <None Include="Assets\Metadata\AudioFile\{48460c3c-7cd7-4388-ad72-288b8d8d2d83}.xml" />
     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\Metadata\AudioFile\{748c3749-39c7-410e-bb50-fe3dc9b21706}.xml" />
