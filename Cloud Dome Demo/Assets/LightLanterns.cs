@@ -10,6 +10,8 @@ public class LightLanterns : MonoBehaviour {
 
     public Transform fireRoot;
 
+    public bool alreadyLit = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -26,17 +28,27 @@ public class LightLanterns : MonoBehaviour {
 
     public void LightLantern()
     {
-        if (currentFire == null)//light it
+        if (!alreadyLit)
         {
-            currentFire = Instantiate(lanternFire, fireRoot.position, new Quaternion(0,0,0,0), fireRoot);
-            
+            if (currentFire == null)//light it
+            {
+                currentFire = Instantiate(lanternFire, fireRoot.position, new Quaternion(0, 0, 0, 0), fireRoot);
+
+            }
+            else // unlight it
+            {
+                Destroy(currentFire);
+            }
+            StartCoroutine(lanternTimer());
         }
-        else // unlight it
-        {
-            Destroy(currentFire);
-        }
 
 
+    }
 
+    public IEnumerator lanternTimer()
+    {
+        alreadyLit = true;
+        yield return new WaitForSeconds(1);
+        alreadyLit = false;
     }
 }

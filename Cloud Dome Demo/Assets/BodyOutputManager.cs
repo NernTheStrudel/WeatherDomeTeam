@@ -10,8 +10,8 @@ public class BodyOutputManager : MonoBehaviour
     public BodySourceView kinectData;
 
     public Dictionary<ulong, GameObject> bodies;
-    
-    
+
+    public Dictionary<ulong, Vector3> bodySpeed;
 
     public Dictionary<ulong, GameObject> beachTowels;
 
@@ -53,6 +53,10 @@ public class BodyOutputManager : MonoBehaviour
     public float surfDistance = 3;
     public float surfHeight = 1;
 
+    public bool lifeguardWhistling = false;
+    public float runSpeed = 50;
+    public AudioSource whistleSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +64,7 @@ public class BodyOutputManager : MonoBehaviour
         beachTowels = new Dictionary<ulong, GameObject>();
         previousHandPos = new Dictionary<ulong, Vector3[]>();
         previousFootPos = new Dictionary<ulong, Vector3[]>();
+        bodySpeed = new Dictionary<ulong, Vector3>();
     }
 
     void doSurfer()
@@ -138,7 +143,10 @@ public class BodyOutputManager : MonoBehaviour
             bodies.Remove(u);
             previousFootPos.Remove(u);
             previousHandPos.Remove(u);
+            bodySpeed.Remove(u);
         }
+
+        doBodySpeed();
         foreach (KeyValuePair<ulong, GameObject> kvp in kinectData._Bodies)
         {
             bool isNew = true;
@@ -167,13 +175,14 @@ public class BodyOutputManager : MonoBehaviour
                 createNewBody(kvp.Value);
 
                 previousHandPos.Add(kvp.Key, new Vector3[] { kvp.Value.transform.Find("HandLeft").transform.position, kvp.Value.transform.Find("HandRight").transform.position });
-
+                bodySpeed.Add(kvp.Key, kvp.Value.transform.Find("SpineBase").transform.position);
                 previousFootPos.Add(kvp.Key, new Vector3[] { kvp.Value.transform.Find("AnkleLeft").transform.position, kvp.Value.transform.Find("AnkleRight").transform.position });
 
 
             }
         }
 
+        //update body speeds
         lookForBeachTowel();
         if (cycleManager.daytime)
         {
@@ -184,6 +193,40 @@ public class BodyOutputManager : MonoBehaviour
         }
         
 
+    }
+
+    void doBodySpeed()
+    {
+
+        List<KeyValuePair<ulong, Vector3>> newPos = new List<KeyValuePair<ulong, Vector3>>();
+
+        foreach(KeyValuePair<ulong, Vector3> kvp in bodySpeed)
+        {
+            //get current and old position, calculate body speed
+            float running = Vector3.Distance(kinectData._Bodies[kvp.Key].transform.Find("SpineBase").transform.position, kvp.Value) / Time.deltaTime;
+
+            if(!lifeguardWhistling && running > runSpeed)
+            {
+                StartCoroutine(lifeGuardWhistle());
+            }
+
+            //Update position
+            newPos.Add(new KeyValuePair<ulong, Vector3>(kvp.Key, kinectData._Bodies[kvp.Key].transform.Find("SpineBase").transform.position));
+           // bodySpeed[kvp.Key] = kinectData._Bodies[kvp.Key].transform.Find("SpineBase").transform.position;
+        }
+        bodySpeed = new Dictionary<ulong, Vector3>();
+        foreach(KeyValuePair<ulong, Vector3> newKVP in newPos)
+        {
+            bodySpeed[newKVP.Key] = newKVP.Value;
+        }
+    }
+
+    public IEnumerator lifeGuardWhistle()
+    {
+        whistleSound.Play();
+        lifeguardWhistling = true;
+        yield return new WaitForSeconds(4);
+        lifeguardWhistling = false;
     }
 
     public IEnumerator toggleSurfer()
@@ -296,6 +339,8 @@ public class BodyOutputManager : MonoBehaviour
             bool rightHand = kvp.Value.transform.Find("HandRight").transform.position.y <= towelCeiling;
             bool leftHand = kvp.Value.transform.Find("HandLeft").transform.position.y <= towelCeiling;
 
+            Vector3 towelPos = kvp.Value.transform.Find("SpineBase").transform.position + TowelOffset;
+
             if (beachTowels.ContainsKey(kvp.Key))
             {
                 //we see if the towel needs to be toggled off
@@ -313,7 +358,7 @@ public class BodyOutputManager : MonoBehaviour
                 {
 
 
-                    GameObject newTowel = Instantiate(towelPrefab, new Vector3(kvp.Value.transform.position.x + TowelOffset.x, kvp.Value.transform.position.y + TowelOffset.y, kvp.Value.transform.position.z + TowelOffset.z), Quaternion.identity) as GameObject;
+                    GameObject newTowel = Instantiate(towelPrefab, towelPos, Quaternion.identity) as GameObject;
                     beachTowels.Add(kvp.Key, newTowel);
 
                 }
